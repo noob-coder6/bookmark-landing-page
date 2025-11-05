@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="./images/logo-bookmark.svg" alt="Bookmark homepage">
+      </a>
+
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+        <li class="nav__item"><a href="#download" class="nav__link">Pricing</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#" class="btn btn--red">Login</a></li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <img src="./images/icon-hamburger.svg" alt="" class="nav__toggle-img--open">
+        <img src="./images/icon-close.svg" alt="" class="nav__toggle-img--close">
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__image">
+          <img src="./images/illustration-hero.svg" alt="A simple bookmark manager illustration">
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">A Simple Bookmark Manager</h1>
+          <p class="hero__description">
+            A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+          <div class="hero__buttons">
+            <a href="#" class="btn btn--blue">Get it on Chrome</a>
+            <a href="#" class="btn btn--gray">Get it on Firefox</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="features__container container">
+        <h2 class="section-title">Features</h2>
+        <p class="section-description">
+          Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+
+        <div class="features__tabs">
+          <button class="features__tab-btn active" data-tab="1">Simple Bookmarking</button>
+          <button class="features__tab-btn" data-tab="2">Speedy Searching</button>
+          <button class="features__tab-btn" data-tab="3">Easy Sharing</button>
+        </div>
+
+        <div class="features__content-wrapper">
+          <!-- Tab 1 Content -->
+          <div class="features__content active" data-content="1">
+            <div class="features__content-image">
+              <img src="./images/illustration-features-tab-1.svg" alt="Bookmark in one click">
+            </div>
+            <div class="features__content-text">
+              <h3 class="features__content-title">Bookmark in one click</h3>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.</p>
+              <a href="#" class="btn btn--blue">More Info</a>
+            </div>
+          </div>
+          <!-- Tab 2 Content -->
+          <div class="features__content" data-content="2">
+            <div class="features__content-image">
+              <img src="./images/illustration-features-tab-2.svg" alt="Intelligent search">
+            </div>
+            <div class="features__content-text">
+              <h3 class="features__content-title">Intelligent search</h3>
+              <p>Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.</p>
+              <a href="#" class="btn btn--blue">More Info</a>
+            </div>
+          </div>
+          <!-- Tab 3 Content -->
+          <div class="features__content" data-content="3">
+            <div class="features__content-image">
+              <img src="./images/illustration-features-tab-3.svg" alt="Share your bookmarks">
+            </div>
+            <div class="features__content-text">
+              <h3 class="features__content-title">Share your bookmarks</h3>
+              <p>Easily share your bookmarks and collections with others. Create a shareable
+                link that you can send at the click of a button.</p>
+              <a href="#" class="btn btn--blue">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="download">
+      <div class="download__container container">
+        <h2 class="section-title">Download the extension</h2>
+        <p class="section-description">
+          We’ve got more browsers in the pipeline. Please do let us know if you’ve
+          got a favourite you’d like us to prioritize.
+        </p>
+        <div class="download__cards">
+          <div class="download__card">
+            <img src="./images/logo-chrome.svg" alt="Google Chrome logo">
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <a href="#" class="btn btn--blue">Add & Install Extension</a>
+          </div>
+          <div class="download__card">
+            <img src="./images/logo-firefox.svg" alt="Mozilla Firefox logo">
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+            <a href="#" class="btn btn--blue">Add & Install Extension</a>
+          </div>
+          <div class="download__card">
+            <img src="./images/logo-opera.svg" alt="Opera logo">
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+            <a href="#" class="btn btn--blue">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq__container container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+        <div class="faq__accordion">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">What is Bookmark?</button>
+            <div class="faq__answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">How can I request a new browser?</button>
+            <div class="faq__answer">
+              <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">Is there a mobile app?</button>
+            <div class="faq__answer">
+              <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                sollicitudin ex et ultricies bibendum.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">What about other Chromium browsers?</button>
+            <div class="faq__answer">
+              <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn--blue">More Info</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact__container container">
+        <p class="contact__subtitle">35,000+ already joined</p>
+        <h2 class="contact__title">Stay up-to-date with what we’re doing</h2>
+        <form class="contact__form" novalidate>
+          <div class="contact__form-group">
+            <input type="email" class="contact__input" placeholder="Enter your email address" required>
+            <div class="contact__error-message">Whoops, make sure it's an email</div>
+          </div>
+          <button type="submit" class="btn btn--red">Contact Us</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <a href="#" class="footer__logo">
+        <img src="./images/logo-bookmark-white.svg" alt="Bookmark homepage">
+      </a>
+      <ul class="footer__nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer__socials">
+        <a href="#" aria-label="Facebook"><img src="./images/icon-facebook.svg" alt=""></a>
+        <a href="#" aria-label="Twitter"><img src="./images/icon-twitter.svg" alt=""></a>
+      </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/noob-coder6" target="_blank">noob-coder6</a>.
+    </p>
+  </footer>
+</body>
+</html>
